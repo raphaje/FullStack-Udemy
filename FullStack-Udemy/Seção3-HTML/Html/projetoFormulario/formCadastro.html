@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto Cadastro</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <form>
+            <h2>Cadastre-se</h2>
+            Login:<br>
+            <input type="text" name="login"><br><br>
+            Sexo:<br>
+            <!--  
+                ATENÇÃO, nos inputs abaixo não foram setados um valor no atributo name, no browser irá conseguir selecionar as 3 opções ao mesmo tempo
+                o que é errado, para não acontecer isso deve ser informado um valor no atributo name, deve ser o mesmo nos 3.
+                Assim só será possivel selecionar um.
+
+                Usando uma linguagem de programação é possível recuperar o valor escolhido pelo usuário e que está armazenado no atributo value="" e assim
+                salvar em um banco de dados por exemplo.
+            -->
+            <input type="radio" name="sexo" value="M">Masculino<br>
+            <input type="radio" name="sexo" value="F">Feminino<br>
+            <input type="radio" name="sexo" value="A">Firmware Modificado<br><br>
+
+            Interesses:<br>
+            <!-- 
+                Dessa vez usamos o "checkbox", mesmo com o "name" possuindo o mesmo valor com o checkbox é possivel selecionar mais de um ou todos os itens que desejar
+            -->
+            <input type="checkbox" name="interesses">Futebol<br>
+            <input type="checkbox" name="interesses">Cursos<br>
+            <input type="checkbox" name="interesses">Moda<br><br>
+
+            Estado:<br>
+            <!--  
+                O select é indicado quando se tem uma lista de seleção grande.
+                veja que setamos um "name" no select e colocamos valor no "value" sp, ce e rj
+                usando uma linguagem de programação é possivel recuperar o estado que está setado no "name" e dentro do estado a opção que o usuário escolheu.
+            -->
+            <select name="estado">
+                <option value="sp">SP</option>
+                <option value="ce">CE</option>
+                <option value="rj">RJ</option>
+            </select><br><br>
+
+            Observações:<br>
+            <textarea></textarea><br>
+            <input type="submit" value="cadastrar">
+
+    </form>
+    </body>
+</html>

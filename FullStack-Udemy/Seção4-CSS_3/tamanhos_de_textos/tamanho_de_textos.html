@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tamanho de textos</title>
+	
+	<style type="text/css">
+	
+		/* Tudo que estiver no atributo div terá tamanho 50 pixel, div está sendo container pai*/
+		div{
+			font-size: 50px;
+		}
+	
+		/*
+		Tamanhos de texto:
+		px = tamanho fixo
+		% = tamanho relativo em relação ao tamanho padrão adotado pelo browser
+		em = tamanho relativo ao container pai
+		*/
+		.texto{
+			font-size: 1em; /* 1em proporcional a fonte informada no container pai div, se colocarmos 2em vai dobrar o valor to tamanho */
+		}
+		
+		.texto2{
+			font-size: 15px;
+		}
+	
+	</style>
+	
+</head>
+<body>
+
+	<div>
+		<p class="texto">Conteúdo 1</p>
+		<p class="texto2">Conteúdo 2</p>
+	</div>
+</body>
+</html>

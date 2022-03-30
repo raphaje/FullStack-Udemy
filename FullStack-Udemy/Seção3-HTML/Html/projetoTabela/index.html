@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto Tabela</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- 
+            Basimente vamos usar 3 tags, também podemos usar atributos como por exemplo border="2" que define 2 pixel nas bordas
+            Primeira tag <table>
+            Segunda tag <tr>, table row(linha da tabela)
+            Terceira tag <td>, table date(dados da tabela)
+                OBS: A tag <th> significa table header(cabeçalho da tabela), deve ser usado pra mostrar títulos, ex:  "produtos", "Códigos"
+                no exemplo abaixo usamos a tag <td> para colocar os titulos mas devemos usar a tag <th>.
+                ao usar a tag th automaticamente os titulos ficam centralizados e em negrito diferenciando dos valores.
+        -->
+        <h2>Produtos</h2>
+        <table border="4" width="100%"> <!-- Vamos usar outros atributos para formatar a tabela, ex width, podemos usar valor em pixel ou porcentagem -->
+            <tr> <!-- Primeira Linha -->
+                <th>Código</th> <!-- Colunas -->
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr> <!-- Segunda linha -->
+                <td>001</td> <!-- Colunas -->
+                <td><a href="">Notebook</a></td> <!-- Inserindo Link -->
+                <td>R$ 800,00</td>
+            </tr>
+
+            <tr> <!-- Terceira Linha -->
+                <td>002</td>
+                <td> <!-- Inserindo imagem -->
+                    <img src="imagens/iphone.jpg" width="200px">
+                </td>
+                <td>R$ 10.000,00</td>
+
+                <tr>
+                    <td>Desconto</td>
+                    <td colspan="2">Cupom1 R$ -10,00</td> <!-- Mesclando coluna, usando o valor 2 ele mescla duas colunas, ele mesmo e a próxima que estaria com espaço branco. -->
+                </tr>
+
+                <tr>
+                    <td>Desconto</td>
+                    <td colspan="2">Cupom2 R$ -12,00</td> <!-- Supondo que o cliente em outro cupom de desconto. -->
+                </tr>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <table border="3" width="100%">
+            <!-- Agora iremos meslcar linhas para não informação repetida -->
+            <tr>
+                <th>Código</th>
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Desconto</td>
+                <td colspan="2">Cupom1 R$ -10,00</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Cupom2 R$ -12,00</td>
+            </tr>
+            
+            <tr>
+                <td>Total:</td>
+                <td colspan="2">R$ 4.000.000,00</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

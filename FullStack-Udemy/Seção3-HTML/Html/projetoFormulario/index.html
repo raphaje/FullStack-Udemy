@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto Formulário</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Login</h2>
+
+        <!-- 
+            Criando o formulario, dentro desse formulario vamos criar os componentes e ao clicar no botão enviar
+            todos os dados criado dentro da tag <form> será enviado.
+                o atribuito action pega os valores e envia para o fazLogin.php que por sua vez
+                captura os valores do "loginTeste" e "senha"  e faz o processamento do login.
+        -->
+        <form action="fazLogin.php">
+            Login:<br>
+            <!-- 
+                entrada do tipo texto, name determina uma forma de recuperar os dados digitado pelo usuário usando uma linguagem de programação
+                vamos setar um nome qualquer no name="" mas por enquanto não vamos trabalhar o valor que for armazenado.
+            -->
+            <input type="text" name="loginTeste"><br>
+
+            Senha:<br>
+            <input type="password" name="senha"><br>
+            <input type="submit" value="Logar">
+        </form>
+    </body>
+</html>
